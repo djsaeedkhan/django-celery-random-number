@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'test1'
+    'test2'
 ]
 
 MIDDLEWARE = [
@@ -67,6 +67,8 @@ TEMPLATES = [
         },
     },
 ]
+
+CELERY_BROKER_URL = 'amqp://localhost'
 
 WSGI_APPLICATION = 'test1.wsgi.application'
 
